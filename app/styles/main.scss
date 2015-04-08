@@ -899,6 +899,10 @@ iframe {
     background: #fff;
     line-height: 1.5em;
     text-transform: uppercase;
+    @media screen and (max-width:450px) {
+      font-size: 22px;
+      margin: -18px auto 36px;
+    }
     &:after {
       border-right: 1px solid $orange;
       content: "";
@@ -907,6 +911,9 @@ iframe {
       position: absolute;
       right: 0;
       top: 17px;
+      @media screen and (max-width:450px) {
+        top: 0;
+      }
     }
     &:before {
       border-left: 1px solid $orange;
@@ -916,6 +923,9 @@ iframe {
       left: 0;
       position: absolute;
       top: 17px;
+      @media screen and (max-width:450px) {
+        top: 0;
+      }
     }
   }
 }
