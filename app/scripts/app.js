@@ -94,7 +94,7 @@ angular
         }
       }
     });
-    //$locationProvider.html5Mode(true).hashPrefix('!');
+    $locationProvider.html5Mode(true).hashPrefix('!');
 
   }).run(function($state, $rootScope, snapRemote) {
     $rootScope.$on('$stateChangeStart', function(e, toState) {
