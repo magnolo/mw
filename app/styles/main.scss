@@ -455,7 +455,7 @@ iframe {
   margin: 0;
   padding: 0;
   background: rgba(255,255,255,0.3);
-  &.sub {
+  &.subber {
     background: rgba(255,255,255,1);
   }
   @media (max-width:$tablet-width) {
