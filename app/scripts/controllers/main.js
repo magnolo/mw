@@ -8,12 +8,15 @@
  * Controller of the mwApp
  */
 angular.module('mwApp')
-	.controller('MainCtrl', function($scope, $state, $timeout) {
-		$scope.loading = true;
-		$scope.goHome = function() {
-			$state.go('home');
-		};
-		$timeout(function() {
-			$scope.loading = false;
-		});
-	});
+  .controller('MainCtrl', function($scope, $state, $timeout, $window) {
+    $scope.loading = true;
+    $scope.goHome = function() {
+      $state.go('home');
+    };
+    $scope.goBack = function() {
+      $window.history.back();
+    };
+    $timeout(function() {
+      $scope.loading = false;
+    });
+  });

@@ -14,8 +14,8 @@
         <figcaption>
           <h2 wrapspan text="work.title"></h2>
           <p>
-            <a ng-if="link.type != 'video'" ng-href="{{link.url}}" target="_blank" ng-repeat="link in work.links"><i class="fa fa-fw" ng-class="link.icon"></i></a>
-            <a ng-if="link.type == 'video'" ng-repeat="link in work.links" ui-sref="video({id:link.id})"><i class="fa fa-fw" ng-class="link.icon"></i></a>
+            <a ng-if="link.type != 'video'" ng-repeat="link in work.links" ng-href="{{link.url}}" target="_blank"><i class="fa fa-fw" ng-class="link.icon"></i></a>
+            <a ng-if="link.type == 'video'" ng-repeat="link in work.links" ui-sref="works.video({work: work.title, id:link.id})"><i class="fa fa-fw" ng-class="link.icon"></i></a>
           </p>
         </figcaption>
       </figure>

@@ -9,5 +9,6 @@
  */
 angular.module('mwApp')
   .controller('VideoCtrl', function($scope, $stateParams) {
-    $scope.video_id = $stateParams.id
+    $scope.video_id = $stateParams.id;
+    $scope.title = $stateParams.work;
   });

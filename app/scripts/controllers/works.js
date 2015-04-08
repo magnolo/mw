@@ -22,7 +22,8 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.wefeeltheworld.org',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }]
       }, {
         title: 'Talente Akademie Kärnten',
@@ -48,10 +49,12 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.architects.co.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/pages/Mascha-Seethaler/678185975581197?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }]
       }, {
         title: 'Sammlung Lenikus',
@@ -63,10 +66,12 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.sammlunglenikus.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/SammlungLenikus?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }]
       }, {
         title: 'Sostaric Photography',
@@ -78,13 +83,16 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.sostaric.com',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/pages/Daniel-Sostaric-Photografie/101584836548809?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }, {
           url: 'http://danielsostaric.tumblr.com/',
-          icon: 'fa-tumblr'
+          icon: 'fa-tumblr',
+          type: 'tumblr'
         }]
       }, {
         title: 'Open Science',
@@ -95,14 +103,17 @@ angular.module('mwApp')
         },
         features: [],
         links: [{
-          url: 'http://www.openscience.co.at',
-          icon: 'fa-globe'
+          url: 'http://www.openscience.or.at',
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/OpenScience.or.at?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }, {
           url: 'https://www.facebook.com/ViennaOpenLab?fref=ts',
-          icon: 'fa-facebook-square'
+          icon: 'fa-facebook-square',
+          type: 'facebook'
         }]
       }, {
         title: 'Bei Mir',
@@ -114,10 +125,12 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.bei-mir.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/BeiMirTrageberatung?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }]
       }, {
         title: 'Finanza',
@@ -129,7 +142,8 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.cwo-kanzlei.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }]
       }, {
         title: 'Lenikus',
@@ -141,7 +155,8 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.lenikus.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }]
       }, {
         title: 'CWO Kanzlei',
@@ -153,7 +168,8 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.cwo-kanzlei.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }]
       }, {
         title: 'Sinus Pro',
@@ -166,10 +182,12 @@ angular.module('mwApp')
         links: [{
 
           url: 'http://www.sinuspro.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/pages/SinusPro-GmbH/131591833565977?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }]
       }, {
         title: 'Muchogusto',
@@ -181,10 +199,12 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.muchogusto.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/muchogusto.una.opera.tragi.erotico?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }]
       }, {
         title: 'rockocco',
@@ -196,10 +216,12 @@ angular.module('mwApp')
         features: [],
         links: [{
           url: 'http://www.rockocco.at',
-          icon: 'fa-globe'
+          icon: 'fa-globe',
+          type: 'web'
         }, {
           url: 'https://www.facebook.com/rockocco.at?fref=ts',
-          icon: 'fa-facebook'
+          icon: 'fa-facebook',
+          type: 'facebook'
         }]
       }, {
         title: 'Flowmotion',
