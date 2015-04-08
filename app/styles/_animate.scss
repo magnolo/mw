@@ -1,0 +1,104 @@
+$phone-width: 666px;
+$tablet-width: 977px;
+$desktop-width: 1277px;
+$large-width: 1355px;
+$big-width:1583px;
+[ui-view].ng-enter, [ui-view].ng-leave  {
+  width:75%;
+  height:100%;
+  left: 25%;
+  right: 0;
+  @media (max-width:$tablet-width) {
+     width:100%;
+     left:0;
+  }
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    -ms-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 1;
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -ms-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  transform:translateX(100%);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+   -webkit-transform:translateX(0%);
+  -moz-transform:translateX(0%);
+  -ms-transform:translateX(0%);
+  -o-transform:translateX(0%);
+  transform:translateX(0%);
+}
+
+[ui-view].ng-leave {
+  opacity: 1; 
+   -webkit-transform:translateX(0%);
+  -moz-transform:translateX(0%);
+  -ms-transform:translateX(0%);
+  -o-transform:translateX(0%);
+  transform:translateX(0%);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 1;
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -ms-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  transform:translateX(100%);
+}
+.anim{
+  -webkit-transition:all 250ms ease-out;
+  -moz-transition:all 250s ease-out;
+  -o-transition:all 250ms ease-out;
+  -ms-transition:all 250ms ease-out;
+  transition:all 250ms ease-out;
+}
+.anim.ng-enter, .anim.ng-leave{
+  opacity: 0;
+}
+.anim.ng-enter{
+  opacity: 0;
+  -webkit-transform:translateY(100%);
+  -moz-transform:translateY(100%);
+  -ms-transform:translateY(100%);
+  -o-transform:translateY(100%);
+  transform:translateY(100%);
+}
+.anim.ng-enter-active{
+    opacity: 1;
+  -webkit-transform:translateY(00%);
+  -moz-transform:translateY(00%);
+  -ms-transform:translateY(00%);
+  -o-transform:translateY(00%);
+  transform:translateY(00%);
+}
+.anim.ng-leave{
+  opacity: 1;
+  -webkit-transform:translateY(100%);
+  -moz-transform:translateY(100%);
+  -ms-transform:translateY(100%);
+  -o-transform:translateY(100%);
+  transform:translateY(100%);
+}
+.anim.ng-leave-active{
+  opacity: 0;
+  -webkit-transform:translateY(100%);
+  -moz-transform:translateY(100%);
+  -ms-transform:translateY(100%);
+  -o-transform:translateY(100%);
+  transform:translateY(100%);
+}
+.anim.ng-enter-stagger, .anim.ng-leave-stagger{
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+      -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}

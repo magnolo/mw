@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" ng-app="mwApp">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>manfred walder // making the web a better place</title>
+  <meta name="description" content="Webseiten. Webshops. CMSs. Apps. Grafikdesign. Animationen. Ihr Anliegen. Idee. Unsere Leidenschaft. Gemeinsame Innovation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  
+  <meta property="og:title" content="Manfred Walder // Webdesign / Graphics / Development" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.manfredwalder.at/" />
+  <meta property="og:image" content="http://www.manfredwalder.at/images/mw_desk.jpg" />
+  <meta property="og:description" content="Webseiten. Webshops. CMSs. Apps. Grafikdesign. Animationen. Ihr Anliegen. Unsere Leidenschaft. Gemeinsame Innovation." /> 
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@WalderManfred">
+  <meta name="twitter:title" content="Manfred Walder // Webdesign / Graphics / Development">
+  <meta name="twitter:description" content="Webseiten. Webshops. CMSs. Apps. Grafikdesign. Animationen. Ihr Anliegen. Unsere Leidenschaft. Gemeinsame Innovation.">
+  <meta name="twitter:creator" content="@WalderManfred">
+  <meta name="twitter:image" content="http://www.manfredwalder.at/images/mw_logo.jpg"> 
+
+
+  <meta itemprop="name" content="Manfred Walder // Webdesign / Graphics / Development">
+  <meta itemprop="description" content="Webseiten. Webshops. CMSs. Apps. Grafikdesign. Animationen. Ihr Anliegen. Unsere Leidenschaft. Gemeinsame Innovation.">
+  <meta itemprop="image" content="http://www.manfredwalder.at/images/mw_desk.jpg"> 
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="/favi.ico" type="image/x-icon">
+  <link rel="icon" href="/favi.ico" type="image/x-icon">
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/angular-snap/angular-snap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" type="text/css" href="bower_components/diamonds/diamonds.css" />
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body id="body" class="show-menu" ng-class="{'sub': !$root.isHome}" ng-cloak ng-controller="MainCtrl">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->  
+      
+      <snap-drawer ng-cloak ng-show="!loading">
+      <div class="menu-wrap" >
+        <nav class="menu">
+          <div class="icon-list">
+            <a ui-sref="home" ><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+            <a ui-sref="services"><i class="fa fa-fw fa-puzzle-piece"></i><span>Services</span></a>
+            <a ui-sref="works" ><i class="fa fa-fw fa-gear"></i><span>Showroom</span></a>
+            <a ui-sref="about" ><i class="fa fa-fw fa-paper-plane"></i><span>Über mich</span></a>
+            <a ui-sref="contact" ><i class="fa fa-fw fa-envelope-o"></i><span>Kontakt</span></a>
+          </div>
+        </nav>
+      </div>
+    </snap-drawer> 
+    <snap-content>
+    <button class="menu-button" id="open-button" snap-toggle="">Menu Ein/Aus</button>
+    <div id="main-container">
+      <div class="animation-page" >
+        <div particles></div>
+        <div class="animation-page-content">
+          <div class="relative">
+            <div class="text">
+              <div class="container-fluid">
+                <h1>Manfred<span class="colored">Walder</span></h1>
+                <p>making the web a better place</p>
+              </div>
+            </div>
+            <logo class="logo_container"></logo>
+            <div class="sidebar" data-snap-ignore="true">
+
+              <logo id="logo_container_min" class="logo_container"></logo>
+              <div class="text">
+                <div class="container-fluid">
+                  <h1>Manfred<span class="colored">Walder</span></h1>
+                </div>
+              </div>
+              <div class="features" within>
+                <ul>
+                  <li> <span><a ui-sref="home" ui-sref-active="active">home</a></span></li>
+                  <li> <span><a ui-sref="services" ui-sref-active="active">services</a></span></li>
+                  <li> <span><a ui-sref="works" ui-sref-active="active">showroom</a></span></li>
+                  <li> <span><a ui-sref="about" ui-sref-active="active">über mich</a></span></li>
+                  <li> <span><a ui-sref="contact" ui-sref-active="active">kontakt</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed" ui-view="content" ></div>
+    
+  </snap-content>
+  <div id="loader" ng-show="loading">
+  <div class="spinner">
+    <div class="cube1"></div>
+    <div class="cube2"></div>
+  </div>
+</div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57159907-1', 'auto');
+  </script>
+
+  <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/snapjs/snap.js"></script>
+    <script src="bower_components/angular-snap/angular-snap.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
+    <script src="bower_components/jquery-waypoints/waypoints.js"></script>
+    <script src="bower_components/SHA-1/sha1.js"></script>
+    <script src="bower_components/angulartics/src/angulartics.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-ga-cordova.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-ga.js"></script>
+    <script src="bower_components/angular-vimeo-embed/dist/angular-vimeo-embed.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/directives/logo.js"></script>
+    <script src="scripts/directives/particles.js"></script>
+    <script src="scripts/controllers/works.js"></script>
+    <script src="scripts/directives/material.js"></script>
+    <script src="scripts/directives/within.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/directives/wrapspan.js"></script>
+    <script src="scripts/directives/checkwidth.js"></script>
+
+    <script src="scripts/controllers/video.js"></script>
+    <!-- endbuild -->
+    <script src="http://maps.google.com/maps/api/js"></script>
+  </body>
+  </html>

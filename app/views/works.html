@@ -1,0 +1,219 @@
+<div class="page" id="works">
+  <div class="">
+    <div class="row">
+      <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+        <div class="title-seprator"></div>
+        <h2>
+          Showroom
+        </h2>
+      </header>
+    </div>
+    <div class="grid">
+      <figure class="effect-hera anim" ng-class="{'blank': work.blank}" ng-repeat="work in works">
+        <img ng-src="{{work.image.src}}" alt="img17" />
+        <figcaption>
+          <h2 wrapspan text="work.title"></h2>
+          <p>
+            <a ng-if="link.type != 'video'" ng-href="{{link.url}}" target="_blank" ng-repeat="link in work.links"><i class="fa fa-fw" ng-class="link.icon"></i></a>
+            <a ng-if="link.type == 'video'" ng-repeat="link in work.links" ui-sref="video({id:link.id})"><i class="fa fa-fw" ng-class="link.icon"></i></a>
+          </p>
+        </figcaption>
+      </figure>
+    </div>
+    <!--  <ul class="square-container col-md-12">
+          <li ng-repeat="work in works" class="anim">
+              <div class="col-md-4">
+              <div class="square-box">
+                <div class="square" >
+                    <div class="inner" >
+                        <div class="item" style="background-image:url('{{work.image.src}}')"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="text col-md-6">
+                <h3>{{ work.title}}</h3>
+                <h4>{{ work.subtitle}}</h4>
+                <p>{{work.text}}</p>
+            </div>
+          </li>
+          <!--<li>
+            <div class="col-md-4">
+              <div class="square-box">
+                <div class="square" >
+                    <div class="inner" >
+                        <div class="item" style="background-image:url('images/fm_broschure.png')"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="text col-md-6">
+                <h3>Flowmotion Broschüre</h3>
+                <h4>Illusion happening</h4>
+                <p>Ich habe schon viele Bröschüren bzw. Heftlan gestaltet, aber was diese hier, zumindest für mich, so besonders macht, ist der Umschlag. Hier wurden ungefähr ein Duzent Landschaften übereinander gelegt, zusammengschnitten, farblich angepasst und gestückelt, um ein farbenfrohes, vielfältiges, sehnsüchtiges Land zu erschaffen.</p>
+            </div>
+          </li>
+           <li>
+           <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/sl_web.jpg')"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+             <div class="text col-md-6">
+                <h3>Sammlung Lenikus</h3>
+                <h4>Sammeln ist noch keine Kunst</h4>
+                <p>Die Sammlung Lenikus umfasst vornehmlich
+Werke junger österreichischer und internationaler Künstler/innen. Die umfangreichen Inhalte
+und indiviuellen Vernetzungen der Werke und
+Künstler untereindander, erforderten ein eigens
+an diese Anforderungen angepasstes System zur
+intuitiven Bedienung und flexiblen Handhabung.
+Die Wartung bietet eine direkte Vernetzung mit
+Services von Mailchimp sowie Facebook um Aufgaben aus einer Hand erledigen zu können. Ein
+Benutzersystem nur für die Künstler ermöglicht
+einen Ausstausch untereeindander.</p>
+            </div>
+          </li>
+           <li>
+            <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/os_web.png')"></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+             <div class="text col-md-6">
+                <h3>Open Science</h3>
+                <p>Open Science steht für den Dialog zwischen
+Wissenschaft und Öffentlichkeit. Der gemeinnützige, wissenschaftliche Verein setzt sich
+dafür ein, Lebenswissenschaften sichtbar, erlebbar und verständlich zu machen.
+In Fusion mit dem Vienna Open Lab ergab sich
+eine Onlineplattform welche neben umfangreicher Aufklärung zu aktuellen wissenschaftlichen
+Themen, ein große Auswahl an Kursen und Fortbildungen anbietet. Diese sind über die Plattform openscience.or.at einseh- und buchbar.</p>
+            </div>
+          </li>
+           <li>
+            <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/finanza.png')"></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+              <div class="text col-md-6">
+                <h3>Finanza</h3>
+                <h4>online</h4>
+                <p>Für viele Selbständige und kleine Betriebe ist es aufwändig die ganzen Zahlungen und Beläge im Auge zu behalten. Wenn dann der Jahresabschluss oder Zwischenbilanzen nötig sind muss der Steuerberater her oder die unüberschaubare Buchhaltungssoftware gefragt werden. Nicht so beim Finanza.<br>
+                Finanza ist ein einfaches, leicht zu bedienendes Onlinetool, welches es ermöglicht alle ein und Ausgänge erfassen und der Überlick niemals verloren geht. Die zu erfassenden Eingaben werden von der CWO-Kanzlei Villach gewartet und zur Verfügung gestellt. </p>
+            </div>
+          </li>
+           <li>
+            <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/till.png')"></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+             <div class="text col-md-6">
+                <h3>Sostaric Photography</h3>
+                <h4>der Till</h4>
+                <p></p>
+            </div>
+          </li>
+          <li>
+           <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/muchogusto.png')"></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+             <div class="text col-md-6">
+                <h3>Muchogusto</h3>
+                <h4>So viele Kurven und ich keine Bremsen!</h4>
+                <p>Die Geschichte des größten Frauenhelden aller Zeiten – verpackt in eine Oper voller heissblütiger Rumba- Klänge, verführerischem Jazz und leidenschaftlicher Surf-Rock Musik der 50er Jahre.<br>
+                Eine schlicht, überschaubare aber sehr anreizende Webpräsentation um einen Überblick erschaffen zu können, welchen Reiz „Una Ópera tragi-erótico“ zu bieten hat.
+            </div>
+          </li>
+
+           <li>
+            <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/rockocco_logo.png')"></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+             <div class="text col-md-6">
+                <h3>rockocco</h3>
+                <h4>pipifeine wäsche für kleine</h4>
+                <p>Für einen Schritt zur Nachhaltigkeit unseres Konsum, das wohlbefinden kindlichen Auslebens und auch ein Weiter(er)leben von so manchen Lieblingsstücken bietet rockocco für unsere Kleinen, recyclete Mode für Bewegungsdrang.<br/>
+                Die Einfachheit der Bedienung von Inhalten ist ein Hauptaugenmerk von rockocco.at. Inhalte werden aus der Fanseite von Facebook übernommen und optisch aufbereitet in die Webseite integriert. Somit ist der Bedienungsaufwand minimiert und auch nicht Facebook-Benutzer versäumen nichts mehr.
+                </p>
+            </div>
+          </li>
+           <!--<li>
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/fm_logo.png')"></div>
+                  </div>
+              </div>
+            </div>
+             <div class="text">
+                <h3>Flowmotion</h3>
+                <h4>feel the move</h4>
+                <p>Das gesamte CI Design, Webseite und T-Shirtdesigns, Event- Fotografie und Videoclips. Alles aus einer Hand</p>
+            </div>
+          </li>
+           <li>
+            <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/sinuspro_web.png')"></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+             <div class="text col-md-6">
+                <h3>Sinus Pro</h3>
+                <p></p>
+            </div>
+          </li>
+            <li>
+             <div class="col-md-4">
+            <div class="square-box">
+              <div class="square" >
+                  <div class="inner" >
+                      <div class="item" style="background-image:url('images/drawings.png')"></div>
+                  </div>
+              </div>
+            </div>
+            </div>
+             <div class="text col-md-6">
+                <h3>Expressing mySelf</h3>
+                <p></p>
+            </div>
+          </li>
+        </ul>-->
+  </div>
+</div>
+
+<div class="close" ng-click="goHome()">&times;</div>
+<div ui-view="sub"></div>
